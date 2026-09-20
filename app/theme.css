@@ -1,7 +1,7 @@
 /* Comfortable cobalt theme: muted surfaces, gentle contrast, clear typography. */
 :root {
   --accent: #2452bd;
-  --ink-deep: #273448;
+  --pearl: #e2e8f2;
   --highlight: #f2f3ef;
   --ink: #2d383e;
   --muted: #59676d;
@@ -104,7 +104,7 @@ summary:focus-visible {
   color: var(--accent);
 }
 .hero-stage {
-  background: var(--ink-deep);
+  background: var(--pearl);
   color: #f2f3ef;
 }
 .hero {
@@ -643,7 +643,7 @@ h2 {
   color: #ffffff0a;
 }
 .footer {
-  background: #273448;
+  background: #e2e8f2;
   color: #ebeeef;
   border-top: 0;
   padding-top: 65px;
@@ -862,8 +862,8 @@ h2 {
   font-size: 35px;
 }
 .plan-featured {
-  background: var(--ink-deep);
-  border-color: var(--ink-deep);
+  background: var(--pearl);
+  border-color: var(--pearl);
   border-top: 4px solid var(--accent);
   padding-top: 27px;
 }
@@ -943,7 +943,7 @@ h2 {
   border-color: #dfe4e6;
 }
 .chat-header {
-  background: var(--ink-deep);
+  background: var(--pearl);
 }
 .chat-header .icon-box {
   background: #2452bd;
@@ -1700,7 +1700,7 @@ h2 {
   --ink: #2d383e;
   --muted: #59676d;
   --accent: #2452bd;
-  --ink-deep: #273448;
+  --pearl: #e2e8f2;
   --line: #cdd4e0;
   --highlight: #e5ebe4;
 }
@@ -1712,7 +1712,7 @@ body {
   background: #eff1f5;
 }
 .hero-stage {
-  background: #273448;
+  background: #e2e8f2;
   color: #e5eae5;
 }
 .hero-emphasis {
@@ -1889,8 +1889,8 @@ body {
   color: #d4e0d9;
 }
 .plan-featured {
-  background: #2c3d5e;
-  border-color: #2c3d5e;
+  background: #e0e7f3;
+  border-color: #e0e7f3;
   border-top-color: #6e8bd4;
 }
 .plan-featured .pill,
@@ -1914,7 +1914,7 @@ body {
   border-color: #c4d1c8;
 }
 .footer {
-  background: #273448;
+  background: #e2e8f2;
   color: #dce5df;
 }
 .footer .brand {
@@ -1932,7 +1932,7 @@ body {
   color: #b8c8c4;
 }
 .chat-header {
-  background: #2c3d5e;
+  background: #e0e7f3;
 }
 .demo-chat {
   background: #eff2ec;
@@ -1999,4 +1999,88 @@ body {
 .hero-intro .button:hover {
   background: #1d4299;
   border-color: #1d4299;
+}
+
+/* Pearl blue replaces charcoal surfaces; cobalt provides emphasis. */
+.hero-stage {
+  background: var(--pearl);
+  color: #243b65;
+  border-bottom: 1px solid #c9d4e7;
+}
+.hero-emphasis {
+  color: var(--accent);
+}
+.hero-intro > p {
+  color: #435672;
+}
+.hero-intro > .hero-sub,
+.hero-copy > .eyebrow {
+  color: #536681;
+}
+.hero-intro .demo-link {
+  color: #284b99;
+}
+.hero-visual {
+  border: 1px solid #c4cfe2;
+}
+.footer {
+  background: #e2e8f2;
+  color: #30476b;
+  border-top: 1px solid #c6d2e5;
+}
+.footer .brand,
+.footer-grid h3 {
+  color: #243b65;
+}
+.footer .brand-dot,
+.footer .text-link,
+.footer .text-link svg {
+  color: var(--accent);
+}
+.footer p,
+.footer .location-label,
+.footer-grid > div:not(:first-child) > a:not(.text-link),
+.footer-bottom {
+  color: #52637f;
+}
+.footer-grid > div > a:hover,
+.footer-bottom a:hover {
+  color: #1d4299;
+}
+.footer-note,
+.footer-bottom {
+  border-color: #bdcbe1;
+}
+.plan-featured {
+  background: #e0e7f3;
+  border-color: #c2d0e8;
+  border-top-color: var(--accent);
+  color: #243b65;
+}
+.plan-featured p {
+  color: #4b6080;
+}
+.plan-featured > .price {
+  color: #244578;
+}
+.plan-featured .check-list {
+  border-color: #bdcbe1;
+}
+.plan-featured .check-list svg {
+  color: var(--accent);
+}
+.chat-header {
+  background: #e0e7f3;
+  color: #243b65;
+  border-bottom: 1px solid #c2d0e8;
+}
+.chat-header div div > span {
+  color: #536681;
+}
+.chat-header button {
+  background: #d1dcef;
+  color: #2452bd;
+}
+.chat-header button:hover {
+  background: #c4d2e9;
 }

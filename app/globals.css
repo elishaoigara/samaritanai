@@ -35,7 +35,7 @@
   --ink: #2d383e;
   --muted: #59676d;
   --accent: #2452bd;
-  --ink-deep: #273448;
+  --pearl: #e2e8f2;
   --highlight: #f2f3ef;
   --paper: #eef0f3;
   --line: #cdd4e0;
@@ -344,7 +344,7 @@ p {
   margin: 0 0 15px;
 }
 .workflow-preview {
-  background: var(--ink-deep);
+  background: var(--pearl);
   border: 1px solid #394247;
   border-radius: 3px;
   overflow: hidden;
