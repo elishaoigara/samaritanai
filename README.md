@@ -58,7 +58,7 @@ The site does not claim paid customers, deployment results, partnerships, legal 
 
 The demo is intentionally scripted and labelled; refresh clears it. There is no live chatbot, payment initiation, booking engine, customer login or newsletter subscription. These require separate production systems and credentials.
 
-The visual theme uses cobalt blue, ink-black and white, with editorial layouts and squared components. Typography is self-hosted DM Sans and Space Grotesk. Font licenses are in `public/fonts/`. No advertising or analytics scripts are included.
+The visual theme uses muted slate blue, soft charcoal and off-white, with editorial layouts and squared components. Typography is self-hosted DM Sans and Space Grotesk. Font licenses are in `public/fonts/`. No advertising or analytics scripts are included.
 
 ## Launch checklist
 
