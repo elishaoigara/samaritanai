@@ -1,108 +1,87 @@
 import Link from "next/link";
+import BusinessPreview from "@/components/business-preview";
 import {
   ArrowUpRight,
-  Check,
   Globe2,
   MessagesSquare,
   ShieldCheck,
 } from "lucide-react";
-import {
-  Button,
-  CTA,
-  Eyebrow,
-  Icon,
-  TextLink,
-  WorkflowPreview,
-} from "@/components/ui";
+import { Button, CTA, Eyebrow, Icon, TextLink } from "@/components/ui";
 import { services, industries, faqs } from "@/lib/content";
 export default function Home() {
   return (
     <>
-      <section className="hero-stage">
-        <div className="container hero">
-          <div className="hero-copy">
-            <Eyebrow>Independent thinking. Practical intelligence.</Eyebrow>
+      <section className="business-hero">
+        <div className="container business-hero-grid">
+          <div className="business-hero-copy">
+            <Eyebrow>AI + software. Built around your business.</Eyebrow>
             <h1>
-              Built for
+              Good business.
               <br />
-              <span className="hero-emphasis">what’s next.</span>
+              <span>Better connected.</span>
             </h1>
-            <div className="hero-intro">
-              <p>
-                AI that answers your customers. Automation that gives you time
-                back. Software that moves your business forward.
-              </p>
-              <p className="hero-sub">
-                Your ambition. Our starting point.
-                <br />
-                Nairobi, Kenya → East Africa.
-              </p>
-              <div className="button-row">
-                <Button>Find your first step</Button>
-                <Link className="demo-link" href="/demo">
-                  Explore the demo <ArrowUpRight size={18} />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="hero-visual">
-            <div className="showcase-copy">
-              <span className="showcase-index">01 / INTELLIGENCE AT WORK</span>
-              <h2>
-                One conversation.
-                <br />A better way
-                <br />
-                to do business.
-              </h2>
-              <p>
-                From the first “Habari” to the right next step. Bring your
-                customers, people and tools together.
-              </p>
-              <div className="hero-footnote">
-                <span>
-                  <Check size={16} /> English & Swahili
-                </span>
-                <span>
-                  <Check size={16} /> People in control
-                </span>
-              </div>
-              <Link href="/solutions/ai-agents" className="showcase-link">
-                Meet your next assistant <ArrowUpRight size={22} />
+            <p>
+              From your first customer conversation to the work behind the
+              scenes. We build the websites, software and AI that help your
+              business move forward.
+            </p>
+            <div className="button-row">
+              <Button href="/solutions">Find your solution</Button>
+              <Link className="text-link" href="/contact">
+                Let’s talk <ArrowUpRight size={18} />
               </Link>
             </div>
-            <WorkflowPreview />
+            <div className="business-hero-note">
+              <span className="location-dot" /> Nairobi, Kenya <span>·</span>{" "}
+              Built for businesses going places.
+            </div>
           </div>
+          <BusinessPreview />
+        </div>
+        <div className="container capability-ribbon">
+          <span>One business. Many possibilities.</span>
+          {[
+            { name: "Sell online", icon: "cart", slug: "ecommerce" },
+            { name: "Serve customers", icon: "messages", slug: "ai-agents" },
+            {
+              name: "Connect operations",
+              icon: "workflow",
+              slug: "automation",
+            },
+            { name: "See the bigger picture", icon: "chart", slug: "data" },
+          ].map((x) => (
+            <Link href={`/solutions/${x.slug}`} key={x.slug}>
+              <Icon name={x.icon} size={18} />
+              {x.name}
+              <ArrowUpRight size={14} />
+            </Link>
+          ))}
         </div>
       </section>
-      <section className="integration-strip">
-        <div className="container integrations">
-          <p>
-            Works with the tools
-            <br />
-            <strong>your business runs on.</strong>
-          </p>
-          <div>
-            <MessagesSquare size={21} /> WhatsApp
-          </div>
-          <div className="mpesa-word">M-PESA</div>
-          <div>Google Workspace</div>
-          <div>QuickBooks</div>
-          <div>Odoo</div>
-          <span className="integration-note">
-            Connected to your workflow.
-            <br />
-            Never one size fits all.
-          </span>
+      <section
+        className="business-connections container"
+        aria-label="Integration possibilities"
+      >
+        <p>Built to connect with your everyday tools</p>
+        <div>
+          <span>WhatsApp</span>
+          <span>M-PESA</span>
+          <span>Google Workspace</span>
+          <span>QuickBooks</span>
+          <span>Odoo</span>
         </div>
+        <small>
+          Integrations scoped around your accounts and available APIs.
+        </small>
       </section>
       <section className="section container">
         <div className="section-heading">
           <div>
-            <Eyebrow>From everyday friction to real progress</Eyebrow>
+            <Eyebrow>A toolkit for your next chapter</Eyebrow>
             <h2>
-              Your next chapter.
+              More than one way
               <br />
-              Our kind of problem.
+              to move forward.
             </h2>
           </div>
           <div>
@@ -114,27 +93,36 @@ export default function Home() {
             <TextLink href="/solutions">Explore all solutions</TextLink>
           </div>
         </div>
-        <div className="service-grid">
-          {services.slice(0, 3).map((s, i) => (
-            <Link
-              href={`/solutions/${s.slug}`}
-              className={`service-card ${i === 0 ? "featured" : ""}`}
-              key={s.slug}
-            >
-              <div className="card-top">
-                <span className="icon-box">
-                  <Icon name={s.icon} />
+        <div className="service-grid business-service-grid">
+          {[
+            "ai-agents",
+            "ecommerce",
+            "pos-inventory",
+            "crm-sales",
+            "automation",
+            "software",
+          ]
+            .map((slug) => services.find((s) => s.slug === slug)!)
+            .map((s, i) => (
+              <Link
+                href={`/solutions/${s.slug}`}
+                className={`service-card ${i === 0 ? "featured" : ""}`}
+                key={s.slug}
+              >
+                <div className="card-top">
+                  <span className="icon-box">
+                    <Icon name={s.icon} />
+                  </span>
+                  <span className="card-number">0{i + 1}</span>
+                </div>
+                <h3>{s.name}</h3>
+                <p>{s.description}</p>
+                <span className="card-bottom">
+                  {s.label}
+                  <ArrowUpRight size={22} />
                 </span>
-                <span className="card-number">0{i + 1}</span>
-              </div>
-              <h3>{s.name}</h3>
-              <p>{s.description}</p>
-              <span className="card-bottom">
-                {s.label}
-                <ArrowUpRight size={22} />
-              </span>
-            </Link>
-          ))}
+              </Link>
+            ))}
         </div>
         <div className="service-more">
           Also here for your next step:
@@ -147,6 +135,77 @@ export default function Home() {
           <Link href="/solutions/managed-services">
             Ongoing support <ArrowUpRight size={15} />
           </Link>
+        </div>
+      </section>
+      <section className="container business-paths">
+        <div className="business-paths-intro">
+          <Eyebrow>Start where it matters</Eyebrow>
+          <h2>
+            Small improvements.
+            <br />A more connected business.
+          </h2>
+          <p>
+            You don’t have to change everything at once. Choose one part of your
+            business and build from there.
+          </p>
+          <TextLink href="/use-cases">See example workflows</TextLink>
+        </div>
+        <div className="business-path-grid">
+          {[
+            {
+              n: "01",
+              icon: "calendar",
+              title: "Make it easier to book",
+              text: "Appointments, availability and reminders that fit your service.",
+              slug: "booking",
+              tags: ["Appointments", "Reminders"],
+            },
+            {
+              n: "02",
+              icon: "wallet",
+              title: "Bring payments into the picture",
+              text: "Connect transactions with orders, receipts and your records.",
+              slug: "payments",
+              tags: ["M-Pesa", "Reconciliation"],
+            },
+            {
+              n: "03",
+              icon: "layout",
+              title: "Give customers their own space",
+              text: "A portal for documents, requests and clear project updates.",
+              slug: "portals",
+              tags: ["Self-service", "Access controls"],
+            },
+            {
+              n: "04",
+              icon: "book",
+              title: "Put team knowledge to work",
+              text: "Find approved answers and keep everyday information organised.",
+              slug: "knowledge",
+              tags: ["Search", "Internal AI"],
+            },
+          ].map((x) => (
+            <Link
+              key={x.slug}
+              href={`/solutions/${x.slug}`}
+              className="business-path"
+            >
+              <div className="business-path-top">
+                <Icon name={x.icon} size={28} />
+                <span>{x.n}</span>
+              </div>
+              <h3>{x.title}</h3>
+              <p>{x.text}</p>
+              <div className="business-path-footer">
+                <div>
+                  {x.tags.map((t) => (
+                    <span key={t}>{t}</span>
+                  ))}
+                </div>
+                <ArrowUpRight size={21} />
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
       <section className="local-section">
@@ -209,20 +268,23 @@ export default function Home() {
           <div>
             <Eyebrow>Built around your world</Eyebrow>
             <h2>
-              Different industries.
-              <br />A shared ambition to do better.
+              Your industry.
+              <br />
+              Our starting point.
             </h2>
           </div>
           <TextLink href="/industries">Find your industry</TextLink>
         </div>
         <div className="industry-tiles">
-          {industries.slice(0, 6).map((x) => (
-            <Link key={x.name} href="/industries">
-              <Icon name={x.icon} />
-              <h3>{x.name}</h3>
-              <ArrowUpRight size={19} />
-            </Link>
-          ))}
+          {industries
+            .filter((_, i) => [0, 2, 3, 4, 8, 9].includes(i))
+            .map((x) => (
+              <Link key={x.name} href="/industries">
+                <Icon name={x.icon} />
+                <h3>{x.name}</h3>
+                <ArrowUpRight size={19} />
+              </Link>
+            ))}
         </div>
       </section>
       <section className="process-section container">

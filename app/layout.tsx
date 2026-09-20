@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Navigation, Footer } from "@/components/navigation";
 import "./globals.css";
 import "./theme.css";
+import "./business.css";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
   (process.env.VERCEL_PROJECT_PRODUCTION_URL
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Samaritan AI",
   },
   description:
-    "AI assistants, business automation and thoughtful software for Kenya and East Africa. English and Swahili. WhatsApp and M-Pesa. Built around your business.",
+    "AI, websites, online stores, POS, CRM, payments and business automation for Kenya and East Africa. Practical software built around your business.",
   icons: { icon: "/icon.svg", apple: "/icon.svg" },
   openGraph: { type: "website", siteName: "Samaritan AI", locale: "en_KE" },
   robots: { index: true, follow: true },

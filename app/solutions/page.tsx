@@ -1,58 +1,39 @@
 import type { Metadata } from "next";
-import {
-  PageHero,
-  CTA,
-  Icon,
-  TextLink,
-  CheckList,
-  Button,
-} from "@/components/ui";
-import { services } from "@/lib/content";
+import { PageHero, CTA, Button } from "@/components/ui";
+import SolutionExplorer from "@/components/solution-explorer";
 export const metadata: Metadata = {
-  title: "Solutions",
+  title: "Business solutions",
   description:
-    "Explore AI assistants, automation, websites, custom software, data intelligence, training and ongoing support from Samaritan AI.",
+    "Explore AI, e-commerce, POS, inventory, CRM, bookings, payments, portals, automation and data solutions for your business.",
 };
 export default function Solutions() {
   return (
     <>
       <PageHero
-        label="Practical solutions"
-        title="Less friction. More forward."
+        label="A connected business starts here"
+        title="More possibilities. One practical partner."
       >
         <p>
-          One partner for the software, automation and intelligence your
-          business needs. Start with the problem. We’ll find the right tools.
+          Win customers. Run smoother operations. Make sense of your data.
+          Explore software and AI built around the way your business works.
         </p>
+        <div className="hero-capabilities">
+          <span>Customer experiences</span>
+          <span>Business operations</span>
+          <span>Intelligence & growth</span>
+        </div>
       </PageHero>
-      <section className="container solutions-grid">
-        {services.map((s) => (
-          <article className="detail-card" key={s.slug}>
-            <div className="card-top">
-              <span className="icon-box">
-                <Icon name={s.icon} />
-              </span>
-              <span className="pill">{s.label}</span>
-            </div>
-            <h2>{s.name}</h2>
-            <p>{s.description}</p>
-            <CheckList items={s.features} />
-            <TextLink href={`/solutions/${s.slug}`}>
-              Explore this solution
-            </TextLink>
-          </article>
-        ))}
-      </section>
+      <SolutionExplorer />
       <section className="container small-banner">
         <div>
-          <h2>Not sure what you need yet?</h2>
+          <h2>Your challenge doesn’t fit a category?</h2>
           <p>
-            A readiness audit connects your business goals with a practical
-            implementation plan.
+            Tell us what you want to improve. We can combine services into a
+            focused first project.
           </p>
         </div>
-        <Button href="/solutions/advisory" secondary>
-          Start with clarity
+        <Button href="/contact" secondary>
+          Talk through your idea
         </Button>
       </section>
       <CTA />

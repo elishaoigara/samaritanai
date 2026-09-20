@@ -72,3 +72,9 @@ The visual theme uses cobalt-blue accents, soft pearl-blue panels and off-white 
 ## Verification
 
 Production build and TypeScript validation are the main build gates. Browser checks cover desktop/mobile rendering, internal links, pricing filters, demo scenarios/reset, mobile navigation, enquiry prefill and honest API failure states. Live email receipt requires your configured delivery credentials and is not claimed by local checks.
+
+### Expanded business solutions
+
+The service catalogue in `lib/content.ts` now covers 14 solution areas, with business-goal tags for the searchable `/solutions` explorer. The catalogue also generates detail pages, sitemap entries, related solutions and contact-form suggestions. New custom services use proposal-based pricing; sector products remain a separate planned roadmap.
+
+The homepage includes an interactive, explicitly illustrative workflow preview (sales, operations and customer service). Its figures and cards do not represent live customer activity. `app/business.css` contains the responsive visual refinement over the existing base theme, retaining cobalt and pearl surfaces.

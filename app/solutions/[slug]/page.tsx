@@ -64,8 +64,8 @@ export default async function Service({
             </>
           ) : (
             <p>
-              Quoted around your systems, support needs and agreed service
-              levels.
+              Quoted around your workflows, integrations and agreed
+              deliverables.
             </p>
           )}
           <p>
@@ -91,6 +91,34 @@ export default async function Service({
           </p>
         </div>
         <TextLink href="/about">Our approach</TextLink>
+      </section>
+      <section className="section container related-solutions">
+        <div className="section-heading">
+          <div>
+            <Eyebrow>Better together</Eyebrow>
+            <h2>Connect the next part of your business.</h2>
+          </div>
+          <TextLink href="/solutions">All solutions</TextLink>
+        </div>
+        <div className="related-grid">
+          {services
+            .filter(
+              (other) =>
+                other.slug !== s.slug &&
+                other.goals.some((goal) => s.goals.includes(goal)),
+            )
+            .slice(0, 3)
+            .map((other) => (
+              <article key={other.slug}>
+                <Icon name={other.icon} size={28} />
+                <h3>{other.name}</h3>
+                <p>{other.description}</p>
+                <TextLink href={`/solutions/${other.slug}`}>
+                  Explore solution
+                </TextLink>
+              </article>
+            ))}
+        </div>
       </section>
       <CTA />
     </>

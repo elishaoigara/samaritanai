@@ -3,7 +3,7 @@ import { industries } from "@/lib/content";
 export const metadata = {
   title: "Industries",
   description:
-    "Practical AI and software use cases for retail, SACCOs, schools, healthcare, hospitality, logistics, NGOs and enterprise.",
+    "Practical AI and software use cases for retail, SACCOs, schools, healthcare, hospitality, logistics, property, professional services, agriculture, construction, NGOs and enterprise.",
 };
 export default function Industries() {
   return (
@@ -22,7 +22,9 @@ export default function Industries() {
           <article className="industry-card" key={x.name}>
             <div className="card-top">
               <Icon name={x.icon} size={29} />
-              <span className="card-number">0{i + 1}</span>
+              <span className="card-number">
+                {String(i + 1).padStart(2, "0")}
+              </span>
             </div>
             <h2>{x.name}</h2>
             <p className="industry-pain">{x.pain}</p>

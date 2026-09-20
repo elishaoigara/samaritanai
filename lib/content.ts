@@ -1,6 +1,29 @@
-export const services = [
+export type Service = {
+  slug: string;
+  name: string;
+  short: string;
+  icon: string;
+  description: string;
+  features: string[];
+  price: string;
+  recurring?: string;
+  label: string;
+  outcome: string;
+  deliverables: string[];
+  goals: string[];
+};
+export const solutionGoals = [
+  { id: "all", name: "All solutions" },
+  { id: "sell", name: "Grow sales" },
+  { id: "serve", name: "Serve customers" },
+  { id: "operate", name: "Simplify operations" },
+  { id: "understand", name: "Make better decisions" },
+  { id: "build", name: "Build & launch" },
+];
+export const services: Service[] = [
   {
     slug: "ai-agents",
+    goals: ["serve", "sell"],
     name: "AI agents & assistants",
     short: "Good conversations. Better business.",
     icon: "messages",
@@ -26,6 +49,7 @@ export const services = [
   },
   {
     slug: "automation",
+    goals: ["operate"],
     name: "Business automation",
     short: "Less busywork. More progress.",
     icon: "workflow",
@@ -50,6 +74,7 @@ export const services = [
   },
   {
     slug: "software",
+    goals: ["build", "sell"],
     name: "Websites & custom software",
     short: "Built around how you work.",
     icon: "code",
@@ -74,6 +99,7 @@ export const services = [
   },
   {
     slug: "data",
+    goals: ["understand"],
     name: "Data & decision intelligence",
     short: "Turn scattered data into clarity.",
     icon: "chart",
@@ -97,6 +123,7 @@ export const services = [
   },
   {
     slug: "advisory",
+    goals: ["understand", "build"],
     name: "AI advisory & training",
     short: "A confident first step into AI.",
     icon: "compass",
@@ -120,6 +147,7 @@ export const services = [
   },
   {
     slug: "managed-services",
+    goals: ["operate", "build"],
     name: "Support & managed services",
     short: "Keep improving after launch.",
     icon: "shield",
@@ -141,6 +169,204 @@ export const services = [
       "Maintenance, monitoring and review schedules",
       "A prioritised improvement backlog",
     ],
+  },
+  {
+    slug: "ecommerce",
+    name: "E-commerce & online stores",
+    short: "Make your next sale easier.",
+    icon: "cart",
+    goals: ["sell", "build"],
+    description:
+      "Give customers a clear path from discovering your products to checkout, payment and delivery.",
+    label: "Sell online",
+    outcome:
+      "Connect your catalogue, checkout and fulfilment in one customer journey.",
+    features: [
+      "Product catalogues, search and mobile storefronts",
+      "M-Pesa and card payment integrations",
+      "Order management and delivery status updates",
+      "Abandoned checkout follow-ups with customer consent",
+    ],
+    deliverables: [
+      "Store design and agreed catalogue setup",
+      "Checkout integration with payment-provider test scenarios",
+      "Order handling and fulfilment workflows",
+      "Store management training and launch checklist",
+    ],
+    price: "",
+  },
+  {
+    slug: "pos-inventory",
+    name: "POS & inventory systems",
+    short: "Know what is selling. Know what is in stock.",
+    icon: "store",
+    goals: ["sell", "operate"],
+    description:
+      "Bring checkout, product records, stock movements and branch reporting into a system built around your retail operations.",
+    label: "Retail operations",
+    outcome:
+      "Give cashiers, stock teams and managers a shared view of the business.",
+    features: [
+      "Cashier checkout and receipt workflows",
+      "Stock receiving, adjustments and low-stock alerts",
+      "Role-based staff and branch access",
+      "Sales, returns and inventory reporting",
+    ],
+    deliverables: [
+      "A review of devices, connectivity and checkout needs",
+      "Product import and opening-stock validation",
+      "Tested sales, returns and stock-movement scenarios",
+      "Cashier training and an agreed rollout plan",
+    ],
+    price: "",
+  },
+  {
+    slug: "crm-sales",
+    name: "CRM & sales workflows",
+    short: "Keep good opportunities moving.",
+    icon: "users",
+    goals: ["sell", "operate"],
+    description:
+      "Organise leads, customer history and follow-ups so your team can see who needs attention and what happens next.",
+    label: "Customer relationships",
+    outcome:
+      "Build a sales process your team can follow without relying on scattered notes.",
+    features: [
+      "Lead capture from forms and approved channels",
+      "Sales pipelines, ownership and task reminders",
+      "Quotes, proposal tracking and follow-up workflows",
+      "Pipeline dashboards and customer activity history",
+    ],
+    deliverables: [
+      "A mapped sales process and agreed pipeline stages",
+      "CRM configuration or a scoped custom workspace",
+      "Cleaned lead import and permission setup",
+      "Team training and reporting definitions",
+    ],
+    price: "",
+  },
+  {
+    slug: "booking",
+    name: "Bookings & service scheduling",
+    short: "Make time for better service.",
+    icon: "calendar",
+    goals: ["serve", "operate"],
+    description:
+      "Help customers request appointments while your team manages availability, confirmations and changes in one place.",
+    label: "Appointments & reservations",
+    outcome: "Turn back-and-forth scheduling into a clear booking journey.",
+    features: [
+      "Appointment and reservation request flows",
+      "Staff availability and calendar integrations",
+      "Confirmation, reminder and cancellation workflows",
+      "Booking deposits where payment integration is agreed",
+    ],
+    deliverables: [
+      "Booking rules and customer journey design",
+      "Calendar and notification setup",
+      "Tests for conflicting bookings, cancellations and time zones",
+      "Staff handover and booking administration guide",
+    ],
+    price: "",
+  },
+  {
+    slug: "payments",
+    name: "Payments & reconciliation",
+    short: "Connect each payment to the right record.",
+    icon: "wallet",
+    goals: ["sell", "operate"],
+    description:
+      "Connect approved payment providers to your orders and records, with clear checks for pending, failed and successful payments.",
+    label: "Connected payments",
+    outcome: "Spend less time matching transactions across separate systems.",
+    features: [
+      "M-Pesa and card checkout integrations",
+      "Payment status, receipts and refund request workflows",
+      "Reconciliation with order or invoice records",
+      "Exception queues and accounting exports",
+    ],
+    deliverables: [
+      "Provider access and payment-flow review",
+      "Verified callbacks and duplicate-event handling",
+      "Sandbox tests for failure and reconciliation scenarios",
+      "Operations guide and agreed reconciliation reports",
+    ],
+    price: "",
+  },
+  {
+    slug: "portals",
+    name: "Customer & partner portals",
+    short: "Give people a simpler way to work with you.",
+    icon: "layout",
+    goals: ["serve", "build"],
+    description:
+      "Create a secure place for customers, members or partners to submit requests, share documents and track progress.",
+    label: "Self-service experiences",
+    outcome:
+      "Replace repeated status enquiries with a clear view of the next step.",
+    features: [
+      "Customer, supplier or member accounts",
+      "Requests, document uploads and status tracking",
+      "Role-based access and activity records",
+      "Internal review and notification workflows",
+    ],
+    deliverables: [
+      "User roles and permission model",
+      "Portal design and agreed workflow implementation",
+      "Access-control and file-handling checks",
+      "Administrator training and handover documentation",
+    ],
+    price: "",
+  },
+  {
+    slug: "knowledge",
+    name: "Knowledge & document systems",
+    short: "Put your business knowledge within reach.",
+    icon: "book",
+    goals: ["serve", "operate"],
+    description:
+      "Help staff find approved answers, organise documents and keep shared knowledge useful as your business changes.",
+    label: "Team knowledge",
+    outcome:
+      "Make it easier to find the right information and see where it came from.",
+    features: [
+      "Searchable policies, guides and internal documents",
+      "AI answers with references to approved sources",
+      "Document intake, tagging and review workflows",
+      "Access permissions and content ownership",
+    ],
+    deliverables: [
+      "Source review and document preparation",
+      "Search or assistant setup with source references",
+      "Answer-quality checks and access testing",
+      "A content review process and administrator training",
+    ],
+    price: "",
+  },
+  {
+    slug: "people-operations",
+    name: "People & admin workflows",
+    short: "Give your team a smoother working day.",
+    icon: "briefcase",
+    goals: ["operate"],
+    description:
+      "Simplify recruitment administration, employee onboarding and routine requests with clear ownership and approval steps.",
+    label: "People & administration",
+    outcome:
+      "Bring everyday team requests into a process people can understand.",
+    features: [
+      "Application intake and interview scheduling",
+      "Onboarding checklists and document collection",
+      "Leave, expense and equipment request workflows",
+      "Approval queues and staff administration reports",
+    ],
+    deliverables: [
+      "A map of roles, requests and approval paths",
+      "Forms, workflow configuration and notifications",
+      "Permission testing and human review checkpoints",
+      "Administrator training and process documentation",
+    ],
+    price: "",
   },
 ];
 export const industries = [
@@ -239,6 +465,42 @@ export const industries = [
       "Records digitisation",
       "System integrations",
     ],
+  },
+  {
+    name: "Property & real estate",
+    icon: "building",
+    pain: "Property enquiries, viewing requests and tenant messages are spread across conversations.",
+    solution:
+      "Connect listings, enquiries, viewing schedules and maintenance requests in one practical workflow.",
+    examples: [
+      "Property enquiry CRM",
+      "Viewing bookings",
+      "Tenant service portals",
+    ],
+  },
+  {
+    name: "Professional services",
+    icon: "briefcase",
+    pain: "Client onboarding, proposals and project updates repeatedly interrupt billable work.",
+    solution:
+      "Give clients a clearer way to start work, share documents and see progress.",
+    examples: ["Client onboarding", "Proposal follow-ups", "Project portals"],
+  },
+  {
+    name: "Agriculture & distribution",
+    icon: "leaf",
+    pain: "Orders, stock movements and supplier records can be difficult to reconcile across locations.",
+    solution:
+      "Explore mobile-friendly collection records, distribution workflows and stock reporting.",
+    examples: ["Supplier records", "Order tracking", "Stock dashboards"],
+  },
+  {
+    name: "Construction & field teams",
+    icon: "tool",
+    pain: "Site updates, materials requests and approvals move through disconnected messages.",
+    solution:
+      "Bring field reporting, materials requests and project visibility into an agreed digital workflow.",
+    examples: ["Site reporting", "Materials approvals", "Project dashboards"],
   },
 ];
 export const products = [

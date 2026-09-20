@@ -1,4 +1,5 @@
 "use client";
+import { services } from "@/lib/content";
 import { useState } from "react";
 import { ArrowUpRight, CheckCircle2, Download } from "lucide-react";
 export default function ContactForm({
@@ -116,12 +117,7 @@ export default function ContactForm({
         />
         <datalist id="interests">
           {[
-            "AI agents & assistants",
-            "Business automation",
-            "Websites & custom software",
-            "Data & decision intelligence",
-            "AI advisory & training",
-            "Support & managed services",
+            ...services.map((service) => service.name),
             "Product design partnership",
             "Not sure yet",
           ].map((x) => (

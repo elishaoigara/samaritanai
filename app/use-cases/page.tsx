@@ -2,7 +2,7 @@ import { PageHero, CTA, Icon, TextLink } from "@/components/ui";
 export const metadata = {
   title: "What’s possible",
   description:
-    "Explore illustrative examples of an AI receptionist, a sales assistant and invoice automation for East African businesses.",
+    "Explore illustrative examples of AI assistance, invoice automation, retail operations, property enquiries and customer onboarding for East African businesses.",
 };
 const cases = [
   {
@@ -52,6 +52,54 @@ const cases = [
     ],
     measure:
       "Processing time, corrections required and the number of manual entry steps.",
+  },
+  {
+    icon: "store",
+    name: "A clearer picture of stock",
+    tag: "POS & inventory",
+    before:
+      "Cashier sales and stock counts live in separate records, making low-stock items easy to miss.",
+    after:
+      "A completed sale updates the stock record. A manager can review movements and decide what to reorder.",
+    steps: [
+      "A cashier records a sale",
+      "Stock movement is linked to the transaction",
+      "A manager reviews a low-stock report",
+    ],
+    measure:
+      "Stock discrepancies, checkout time and time spent preparing reorder lists.",
+  },
+  {
+    icon: "building",
+    name: "Property enquiries with a next step",
+    tag: "CRM & bookings",
+    before:
+      "Viewing requests get buried in messages and agents repeat the same questions.",
+    after:
+      "A form or assistant captures the customer’s requirements, assigns an agent and helps arrange a viewing.",
+    steps: [
+      "A prospect shares their property requirements",
+      "The enquiry enters the sales pipeline",
+      "An agent confirms a suitable viewing time",
+    ],
+    measure:
+      "Enquiry response time, completed follow-ups and viewing attendance.",
+  },
+  {
+    icon: "layout",
+    name: "A smoother start for every client",
+    tag: "Portals & onboarding",
+    before:
+      "New clients send documents across email threads and ask repeatedly about progress.",
+    after:
+      "A portal collects agreed information and shows the next action, while staff review submissions in one place.",
+    steps: [
+      "A client signs in to their account",
+      "Documents enter a controlled review workflow",
+      "The client sees status updates and any requested changes",
+    ],
+    measure:
+      "Onboarding completion time, missing documents and status enquiries.",
   },
 ];
 export default function UseCases() {
