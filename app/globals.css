@@ -34,12 +34,12 @@
 :root {
   --ink: #2d383e;
   --muted: #59676d;
-  --accent: #536b7a;
-  --ink-deep: #2c373e;
+  --accent: #2452bd;
+  --ink-deep: #273448;
   --highlight: #f2f3ef;
-  --paper: #ecefea;
-  --line: #cdd5d0;
-  --soft: #e5eae6;
+  --paper: #eef0f3;
+  --line: #cdd4e0;
+  --soft: #e5e9ef;
   --radius: 16px;
   --display: "Space Grotesk", Arial, sans-serif;
   --body: "DM Sans", Arial, sans-serif;
@@ -465,7 +465,7 @@ p {
   height: 37px;
   border-radius: 3px;
   background: #f2f3ef;
-  color: #536b7a;
+  color: #2452bd;
 }
 .workflow-action strong {
   display: block;
@@ -1731,7 +1731,7 @@ p {
   flex-direction: row-reverse;
 }
 .chat-message.user p {
-  background: #536b7a;
+  background: #2452bd;
   color: #f2f3ef;
   border-radius: 12px 0 12px 12px;
 }

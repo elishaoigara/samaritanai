@@ -1,17 +1,17 @@
-/* Quiet slate theme: muted surfaces, gentle contrast, clear typography. */
+/* Comfortable cobalt theme: muted surfaces, gentle contrast, clear typography. */
 :root {
-  --accent: #536b7a;
-  --ink-deep: #2c373e;
+  --accent: #2452bd;
+  --ink-deep: #273448;
   --highlight: #f2f3ef;
   --ink: #2d383e;
   --muted: #59676d;
-  --paper: #ecefea;
-  --soft: #e5eae6;
-  --line: #cdd5d0;
+  --paper: #eef0f3;
+  --soft: #e5e9ef;
+  --line: #cdd4e0;
   --display: "Space Grotesk", Arial, sans-serif;
 }
 ::selection {
-  background: #536b7a;
+  background: #2452bd;
   color: #f2f3ef;
 }
 h1,
@@ -26,10 +26,10 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
 summary:focus-visible {
-  outline-color: #7b969f;
+  outline-color: #6e8bd4;
 }
 .site-header {
-  border-bottom: 1px solid #cdd5d0;
+  border-bottom: 1px solid #cdd4e0;
   backdrop-filter: none;
   background: #f2f3ef;
 }
@@ -69,7 +69,7 @@ summary:focus-visible {
     transform 0.2s;
 }
 .button:hover {
-  background: #435b69;
+  background: #1d4299;
   transform: translateY(-2px);
 }
 .button-outline {
@@ -129,7 +129,7 @@ summary:focus-visible {
   letter-spacing: -0.075em;
 }
 .hero-emphasis {
-  color: #c0cdd1;
+  color: #b8cafa;
   white-space: nowrap;
 }
 .hero-intro {
@@ -169,7 +169,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: 0.85fr 1fr;
   gap: 60px;
-  background: #536b7a;
+  background: #2452bd;
   margin-top: 58px;
   padding: 37px 45px 37px 39px;
   align-items: center;
@@ -226,7 +226,7 @@ summary:focus-visible {
   background: #f2f3ef;
   color: var(--ink);
   border: 1px solid #f2f3ef;
-  box-shadow: 12px 12px 0 #c6ceca;
+  box-shadow: 12px 12px 0 #c9d2e3;
   transform: none;
   border-radius: 2px;
 }
@@ -237,7 +237,7 @@ summary:focus-visible {
   font-size: 9px;
 }
 .tiny-mark {
-  color: #536b7a;
+  color: #2452bd;
 }
 .preview-tag {
   border-color: #e3e6e8;
@@ -274,7 +274,7 @@ summary:focus-visible {
   margin-right: 23px;
 }
 .assistant-label {
-  color: #536b7a;
+  color: #2452bd;
   font-size: 8px;
 }
 .message-options {
@@ -305,7 +305,7 @@ summary:focus-visible {
   gap: 10px;
 }
 .action-icon {
-  background: #536b7a;
+  background: #2452bd;
   color: #f2f3ef;
   border-radius: 2px;
   width: 32px;
@@ -320,7 +320,7 @@ summary:focus-visible {
   font-size: 10px;
 }
 .workflow-action > svg {
-  color: #536b7a;
+  color: #2452bd;
 }
 .workflow-results > div {
   background: #ebeeef;
@@ -331,7 +331,7 @@ summary:focus-visible {
   font-size: 10px;
 }
 .workflow-results svg {
-  color: #536b7a;
+  color: #2452bd;
 }
 .preview-bottom {
   color: #6f828b;
@@ -342,7 +342,7 @@ summary:focus-visible {
 .integration-strip {
   background: #f2f3ef;
   border-top: 0;
-  border-bottom: 1px solid #cdd5d0;
+  border-bottom: 1px solid #cdd4e0;
 }
 .integrations {
   min-height: 110px;
@@ -452,7 +452,7 @@ h2 {
   color: #434e53;
 }
 .local-section {
-  background: #536b7a;
+  background: #2452bd;
   color: #f2f3ef;
   padding-block: 84px;
   border: 0;
@@ -613,7 +613,7 @@ h2 {
   font-size: 15px;
 }
 .cta {
-  background: #536b7a;
+  background: #2452bd;
   border-radius: 2px;
   padding: 55px 52px;
   box-shadow: 9px 9px 0 #ebeeef;
@@ -643,7 +643,7 @@ h2 {
   color: #ffffff0a;
 }
 .footer {
-  background: #2c373e;
+  background: #273448;
   color: #ebeeef;
   border-top: 0;
   padding-top: 65px;
@@ -652,7 +652,7 @@ h2 {
   color: #f2f3ef;
 }
 .footer .brand-dot {
-  color: #b5c8ce;
+  color: #b8cafa;
 }
 .footer p,
 .footer .location-label,
@@ -667,7 +667,7 @@ h2 {
   color: #e7eaeb;
 }
 .footer .text-link svg {
-  color: #b5c8ce;
+  color: #b8cafa;
 }
 .footer-note {
   border-color: #ffffff26;
@@ -695,7 +695,7 @@ h2 {
   left: 0;
   width: 95px;
   height: 3px;
-  background: #536b7a;
+  background: #2452bd;
 }
 .page-hero h1 {
   font-size: clamp(45px, 5.5vw, 78px);
@@ -840,7 +840,7 @@ h2 {
 }
 .founder-monogram {
   background: #ebeeef;
-  color: #536b7a;
+  color: #2452bd;
   border: 1px solid #e0e4e6;
   border-radius: 2px;
   font-size: 130px;
@@ -868,8 +868,8 @@ h2 {
   padding-top: 27px;
 }
 .plan-featured .pill {
-  background: #536b7a;
-  border-color: #536b7a;
+  background: #2452bd;
+  border-color: #2452bd;
   color: #f2f3ef;
 }
 .plan-featured p {
@@ -879,14 +879,14 @@ h2 {
   color: #f2f3ef;
 }
 .plan-featured .button {
-  background: #536b7a;
+  background: #2452bd;
   color: #f2f3ef;
 }
 .plan-featured .button:hover {
-  background: #617b8a;
+  background: #365fc0;
 }
 .plan-featured .check-list svg {
-  color: #b5c8ce;
+  color: #b8cafa;
 }
 .filter-buttons button {
   border-radius: 2px;
@@ -913,7 +913,7 @@ h2 {
   background: #ebeeef;
   border-top: 3px solid var(--accent);
   border-radius: 2px;
-  color: #536b7a;
+  color: #2452bd;
 }
 .case-heading h2 {
   color: var(--ink);
@@ -946,7 +946,7 @@ h2 {
   background: var(--ink-deep);
 }
 .chat-header .icon-box {
-  background: #536b7a;
+  background: #2452bd;
   color: #f2f3ef;
   justify-content: center;
   border-radius: 2px;
@@ -961,10 +961,10 @@ h2 {
 }
 .chat-avatar {
   background: #ebeeef;
-  color: #536b7a;
+  color: #2452bd;
 }
 .chat-message.user p {
-  background: #536b7a;
+  background: #2452bd;
   color: #f2f3ef;
   border-radius: 2px;
 }
@@ -983,7 +983,7 @@ h2 {
   background: #f2f3ef;
 }
 .chat-controls form button {
-  background: #536b7a;
+  background: #2452bd;
   border-radius: 2px;
 }
 .contact-form {
@@ -996,7 +996,7 @@ h2 {
 .contact-steps li > span {
   font-family: var(--display);
   font-size: 21px;
-  color: #536b7a;
+  color: #2452bd;
 }
 .contact-steps h3 {
   font-size: 21px;
@@ -1016,12 +1016,12 @@ h2 {
   color: #697a82;
 }
 .consent input {
-  accent-color: #536b7a;
+  accent-color: #2452bd;
 }
 .contact-success {
   border-color: #dde2e4;
   background: #ebeeef;
-  color: #536b7a;
+  color: #2452bd;
   border-radius: 2px;
 }
 .contact-success h2 {
@@ -1160,7 +1160,7 @@ h2 {
     padding: 16px;
   }
   .workflow-preview {
-    box-shadow: 7px 7px 0 #c6ceca;
+    box-shadow: 7px 7px 0 #c9d2e3;
   }
   .message {
     font-size: 11px;
@@ -1365,7 +1365,7 @@ h2 {
     margin-bottom: 26px;
   }
   .workflow-preview {
-    box-shadow: 6px 6px 0 #c6ceca;
+    box-shadow: 6px 6px 0 #c9d2e3;
   }
   .preview-tag {
     display: none;
@@ -1694,14 +1694,14 @@ h2 {
 
 /* Comfortable reading surfaces: no saturated full-width colour blocks. */
 :root {
-  --paper: #ecefea;
+  --paper: #eef0f3;
   --surface: #f2f3ef;
-  --soft: #e3e8e3;
+  --soft: #e4e8ef;
   --ink: #2d383e;
   --muted: #59676d;
-  --accent: #536b7a;
-  --ink-deep: #2c373e;
-  --line: #cdd5d0;
+  --accent: #2452bd;
+  --ink-deep: #273448;
+  --line: #cdd4e0;
   --highlight: #e5ebe4;
 }
 body {
@@ -1709,14 +1709,14 @@ body {
 }
 .site-header,
 .navigation {
-  background: #eef1eb;
+  background: #eff1f5;
 }
 .hero-stage {
-  background: #2c373e;
+  background: #273448;
   color: #e5eae5;
 }
 .hero-emphasis {
-  color: #bacbd0;
+  color: #b8cafa;
 }
 .hero-intro > p {
   color: #cbd6d3;
@@ -1726,8 +1726,8 @@ body {
   color: #b0c0c2;
 }
 .hero-intro .button {
-  background: #dde5df;
-  border-color: #dde5df;
+  background: #e1e6f0;
+  border-color: #e1e6f0;
   color: #2d383e;
 }
 .hero-intro .button:hover {
@@ -1737,14 +1737,14 @@ body {
   color: #d6dfda;
 }
 .hero-visual {
-  background: #dce3de;
+  background: #dfe5ef;
   color: #2d383e;
 }
 .showcase-index {
   color: #53676d;
 }
 .showcase-copy h2 {
-  color: #304249;
+  color: #2e4066;
 }
 .showcase-copy > p {
   color: #52636a;
@@ -1753,19 +1753,19 @@ body {
   color: #4f6269;
 }
 .hero-footnote svg {
-  color: #536b7a;
+  color: #2452bd;
 }
 .showcase-link {
-  color: #344c56;
+  color: #284b99;
   border-color: #b9c6bf;
 }
 .workflow-preview {
-  background: #eef1eb;
+  background: #eff1f5;
   border-color: #c8d2cb;
-  box-shadow: 4px 4px 0 #c6d0c9;
+  box-shadow: 4px 4px 0 #c9d2e3;
 }
 .workflow-body {
-  background: #e7ece6;
+  background: #e8ecf3;
 }
 .message-customer,
 .workflow-action {
@@ -1773,17 +1773,17 @@ body {
   border-color: #cbd5cd;
 }
 .message-ai {
-  background: #d9e3df;
+  background: #dce4f3;
   color: #34494f;
 }
 .message-options span {
-  background: #e6ede5;
+  background: #e7ecf6;
   border-color: #aebfb8;
   color: #425d66;
 }
 .assistant-label,
 .tiny-mark {
-  color: #49636d;
+  color: #2452bd;
 }
 .workflow-label,
 .preview-top,
@@ -1791,7 +1791,7 @@ body {
   color: #5c6e71;
 }
 .preview-tag {
-  background: #e5eae3;
+  background: #e6eaf2;
   color: #596d70;
   border-color: #b9c7bd;
 }
@@ -1799,12 +1799,12 @@ body {
   color: #5e7076;
 }
 .workflow-results > div {
-  background: #e7ede5;
+  background: #e8ecf3;
   border-color: #c5d0c6;
   color: #53686b;
 }
 .integration-strip {
-  background: #e6ebe5;
+  background: #e7ebf2;
 }
 .service-card,
 .detail-card,
@@ -1815,25 +1815,25 @@ body {
   background: var(--surface);
 }
 .service-card.featured {
-  background: #e0e7e1;
+  background: #e0e6f1;
 }
 .service-card:hover,
 .service-card.featured:hover {
-  background: #dae3dd;
+  background: #d8e0f0;
 }
 .icon-box,
 .service-card.featured .icon-box {
   color: var(--accent);
 }
 .local-section {
-  background: #dde5df;
-  color: #304249;
+  background: #e1e6f0;
+  color: #2e4066;
 }
 .local-section .eyebrow {
   color: #596c70;
 }
 .local-grid h2 span {
-  color: #536e79;
+  color: #2452bd;
 }
 .local-grid > div > p:not(.eyebrow),
 .local-features p {
@@ -1841,7 +1841,7 @@ body {
 }
 .local-grid .text-link,
 .local-grid .text-link svg {
-  color: #3e5965;
+  color: #2452bd;
 }
 .local-features article {
   border-color: #bdcbc1;
@@ -1854,10 +1854,10 @@ body {
   background: transparent;
 }
 .industry-tiles > a:hover {
-  background: #e0e7e0;
+  background: #e0e6f1;
 }
 .cta {
-  background: #465f6b;
+  background: #2d4b91;
   box-shadow: none;
 }
 .cta h2 {
@@ -1872,35 +1872,35 @@ body {
 .cta .button {
   background: #e0e8df;
   border-color: #e0e8df;
-  color: #344b54;
+  color: #284b99;
 }
 .cta .button:hover {
   background: #d0ddd3;
 }
 .about-manifesto {
-  background: #465f6b;
-  box-shadow: 4px 4px 0 #cdd8cf;
+  background: #2d4b91;
+  box-shadow: 4px 4px 0 #cbd4e8;
 }
 .about-manifesto em {
-  color: #c1d2cd;
+  color: #c0cffa;
 }
 .about-manifesto > span,
 .about-manifesto > div {
   color: #d4e0d9;
 }
 .plan-featured {
-  background: #35464f;
-  border-color: #35464f;
-  border-top-color: #789099;
+  background: #2c3d5e;
+  border-color: #2c3d5e;
+  border-top-color: #6e8bd4;
 }
 .plan-featured .pill,
 .plan-featured > .button {
-  background: #536b7a;
+  background: #2452bd;
   color: #f1f4ed;
-  border-color: #536b7a;
+  border-color: #2452bd;
 }
 .plan-featured .button:hover {
-  background: #526d79;
+  background: #1d4299;
 }
 .plan-featured p {
   color: #c8d5d2;
@@ -1909,12 +1909,12 @@ body {
   color: #e9efe6;
 }
 .founder-monogram {
-  background: #dfe7e0;
-  color: #617b82;
+  background: #e0e6f1;
+  color: #3c5ca2;
   border-color: #c4d1c8;
 }
 .footer {
-  background: #2c373e;
+  background: #273448;
   color: #dce5df;
 }
 .footer .brand {
@@ -1932,18 +1932,18 @@ body {
   color: #b8c8c4;
 }
 .chat-header {
-  background: #35464f;
+  background: #2c3d5e;
 }
 .demo-chat {
   background: #eff2ec;
   box-shadow: 4px 4px 0 #d6dfd5;
 }
 .chat-message p {
-  background: #dce6df;
+  background: #dce4f3;
   color: #3d555c;
 }
 .chat-message.user p {
-  background: #536b7a;
+  background: #2452bd;
   color: #edf2e9;
 }
 .chat-controls form,
@@ -1964,26 +1964,39 @@ body {
   background: #f0f3ec;
 }
 .table-scroll caption {
-  background: #dfe7df;
+  background: #e0e6f1;
   color: #526970;
 }
 @media (max-width: 900px) {
   .workflow-preview {
-    box-shadow: 4px 4px 0 #c6d0c9;
+    box-shadow: 4px 4px 0 #c9d2e3;
   }
 }
 @media (max-width: 650px) {
   .hero-visual {
-    background: #dce3de;
+    background: #dfe5ef;
   }
   .cta {
     box-shadow: none;
   }
   .about-manifesto {
-    box-shadow: 4px 4px 0 #cdd8cf;
+    box-shadow: 4px 4px 0 #cbd4e8;
   }
   .contact-form,
   .demo-chat {
     box-shadow: 3px 3px 0 #d6dfd5;
   }
+}
+
+/* Cobalt actions stay distinct against the softer reading surfaces. */
+.nav-cta,
+.hero-intro .button {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #f1f3fa;
+}
+.nav-cta:hover,
+.hero-intro .button:hover {
+  background: #1d4299;
+  border-color: #1d4299;
 }

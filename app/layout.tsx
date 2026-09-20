@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: { type: "website", siteName: "Samaritan AI", locale: "en_KE" },
   robots: { index: true, follow: true },
 };
-export const viewport: Viewport = { themeColor: "#536b7a" };
+export const viewport: Viewport = { themeColor: "#2452bd" };
 export default function RootLayout({
   children,
 }: {
