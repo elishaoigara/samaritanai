@@ -52,13 +52,13 @@ The endpoint includes same-origin checking, bounded request size, a honeypot, co
 
 Content is adapted from the supplied August 2026 company blueprint and the accompanying launch discussion. Public prices remain **indicative**, not binding quotations. Internal market forecasts, financial projections, hiring targets and private operating plans are deliberately not published.
 
-Edit `lib/content.ts` for services, industries, planned products, pricing and FAQs. Page-specific narrative lives in `app/`. Shared UI is in `components/`. Design tokens, desktop/mobile layouts and reduced-motion support are in `app/globals.css`. The original simple monogram is in `public/icon.svg`.
+Edit `lib/content.ts` for services, industries, planned products, pricing and FAQs. Page-specific narrative lives in `app/`. Shared UI is in `components/`. Design tokens, desktop/mobile layouts and reduced-motion support are in `app/globals.css` and `app/theme.css`. The original simple monogram is in `public/icon.svg`.
 
 The site does not claim paid customers, deployment results, partnerships, legal registration, regulatory certification or product availability that the source files do not establish. Product pilots and specialist compliance work need separate scope and confirmation.
 
 The demo is intentionally scripted and labelled; refresh clears it. There is no live chatbot, payment initiation, booking engine, customer login or newsletter subscription. These require separate production systems and credentials.
 
-Typography is self-hosted DM Sans and Manrope. Font licenses are in `public/fonts/`. No advertising or analytics scripts are included.
+The visual theme uses cobalt blue, ink-black and white, with editorial layouts and squared components. Typography is self-hosted DM Sans and Space Grotesk. Font licenses are in `public/fonts/`. No advertising or analytics scripts are included.
 
 ## Launch checklist
 

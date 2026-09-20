@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Navigation, Footer } from "@/components/navigation";
 import "./globals.css";
+import "./theme.css";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
   (process.env.VERCEL_PROJECT_PRODUCTION_URL
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: { type: "website", siteName: "Samaritan AI", locale: "en_KE" },
   robots: { index: true, follow: true },
 };
-export const viewport: Viewport = { themeColor: "#163e35" };
+export const viewport: Viewport = { themeColor: "#2448ff" };
 export default function RootLayout({
   children,
 }: {

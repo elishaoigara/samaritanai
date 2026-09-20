@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
   ArrowUpRight,
-  ArrowDown,
   Check,
   Globe2,
   MessagesSquare,
@@ -19,43 +18,59 @@ import { services, industries, faqs } from "@/lib/content";
 export default function Home() {
   return (
     <>
-      <section className="hero container">
-        <div className="hero-copy">
-          <Eyebrow>East Africa’s practical AI partner</Eyebrow>
-          <h1>
-            Less busywork.
-            <br />
-            More <span className="hero-emphasis">possibility.</span>
-          </h1>
-          <p>
-            AI that answers your customers. Automation that gives you time back.
-            Software that moves your business forward.
-          </p>
-          <p className="hero-sub">Built in Kenya. Built around you.</p>
-          <div className="button-row">
-            <Button>Find your first step</Button>
-            <Link className="demo-link" href="/demo">
-              <span className="play-symbol">▶</span> See AI in action
-            </Link>
+      <section className="hero-stage">
+        <div className="container hero">
+          <div className="hero-copy">
+            <Eyebrow>Independent thinking. Practical intelligence.</Eyebrow>
+            <h1>
+              Built for
+              <br />
+              <span className="hero-emphasis">what’s next.</span>
+            </h1>
+            <div className="hero-intro">
+              <p>
+                AI that answers your customers. Automation that gives you time
+                back. Software that moves your business forward.
+              </p>
+              <p className="hero-sub">
+                Your ambition. Our starting point.
+                <br />
+                Nairobi, Kenya → East Africa.
+              </p>
+              <div className="button-row">
+                <Button>Find your first step</Button>
+                <Link className="demo-link" href="/demo">
+                  Explore the demo <ArrowUpRight size={18} />
+                </Link>
+              </div>
+            </div>
           </div>
-          <div className="hero-footnote">
-            <span>
-              <Check size={15} /> English & Swahili
-            </span>
-            <span>
-              <Check size={15} /> Your tools, connected
-            </span>
-          </div>
-        </div>
-        <div className="hero-visual">
-          <div className="visual-kicker">
-            <span>HUMAN AMBITION, MEET PRACTICAL AI.</span>
-            <ArrowUpRight size={20} />
-          </div>
-          <WorkflowPreview />
-          <div className="visual-caption">
-            <span>Good technology should feel this simple.</span>
-            <span>01 — 03</span>
+          <div className="hero-visual">
+            <div className="showcase-copy">
+              <span className="showcase-index">01 / INTELLIGENCE AT WORK</span>
+              <h2>
+                One conversation.
+                <br />A better way
+                <br />
+                to do business.
+              </h2>
+              <p>
+                From the first “Habari” to the right next step. Bring your
+                customers, people and tools together.
+              </p>
+              <div className="hero-footnote">
+                <span>
+                  <Check size={16} /> English & Swahili
+                </span>
+                <span>
+                  <Check size={16} /> People in control
+                </span>
+              </div>
+              <Link href="/solutions/ai-agents" className="showcase-link">
+                Meet your next assistant <ArrowUpRight size={22} />
+              </Link>
+            </div>
+            <WorkflowPreview />
           </div>
         </div>
       </section>
