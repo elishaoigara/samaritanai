@@ -7,7 +7,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { Button, CTA, Eyebrow, Icon, TextLink } from "@/components/ui";
-import { services, industries, faqs } from "@/lib/content";
+import { services, industries, faqs, marketingServices } from "@/lib/content";
 export default function Home() {
   return (
     <>
@@ -204,6 +204,33 @@ export default function Home() {
                 </div>
                 <ArrowUpRight size={21} />
               </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+      <section className="container marketing-feature">
+        <div>
+          <Eyebrow>Marketing & Customer Growth</Eyebrow>
+          <h2>
+            Reach the right people.
+            <br />
+            Give them a reason to return.
+          </h2>
+          <p>
+            Connect your campaigns, content and customer relationships. Start
+            with one practical way to attract enquiries or encourage repeat
+            business.
+          </p>
+          <Button href="/solutions/marketing-growth">
+            Explore marketing solutions
+          </Button>
+        </div>
+        <div className="marketing-service-links">
+          {marketingServices.map((service) => (
+            <Link key={service.slug} href={`/solutions/${service.slug}`}>
+              <Icon name={service.icon} size={20} />
+              <span>{service.name}</span>
+              <ArrowUpRight size={17} />
             </Link>
           ))}
         </div>

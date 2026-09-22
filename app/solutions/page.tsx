@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { PageHero, CTA, Button } from "@/components/ui";
+import { PageHero, CTA, Button, TextLink } from "@/components/ui";
 import SolutionExplorer from "@/components/solution-explorer";
 export const metadata: Metadata = {
   title: "Business solutions",
   description:
-    "Explore AI, e-commerce, POS, inventory, CRM, bookings, payments, portals, automation and data solutions for your business.",
+    "Explore AI, e-commerce, POS, inventory, CRM, bookings, payments, portals, automation, marketing and customer growth solutions for your business.",
 };
 export default function Solutions() {
   return (
@@ -23,6 +23,21 @@ export default function Solutions() {
           <span>Intelligence & growth</span>
         </div>
       </PageHero>
+      <section className="container marketing-discovery">
+        <div>
+          <span className="solution-kicker">
+            Explore a connected set of services
+          </span>
+          <h2>Marketing & Customer Growth</h2>
+          <p>
+            Campaigns, content, loyalty and feedback. Give customers more
+            reasons to discover your business and return.
+          </p>
+        </div>
+        <TextLink href="/solutions/marketing-growth">
+          Explore marketing solutions
+        </TextLink>
+      </section>
       <SolutionExplorer />
       <section className="container small-banner">
         <div>

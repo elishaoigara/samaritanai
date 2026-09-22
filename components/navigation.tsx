@@ -89,6 +89,7 @@ export function Footer() {
           <h3>Explore</h3>
           <Link href="/solutions">Our solutions</Link>
           <Link href="/industries">Your industry</Link>
+          <Link href="/solutions/marketing-growth">Marketing & growth</Link>
           <Link href="/products">Product roadmap</Link>
           <Link href="/pricing">Pricing</Link>
         </div>

@@ -11,7 +11,7 @@ export default function SolutionExplorer() {
   const filtered = services.filter(
     (s) =>
       (goal === "all" || s.goals.includes(goal)) &&
-      `${s.name} ${s.description} ${s.features.join(" ")}`
+      `${s.name} ${s.label} ${s.description} ${s.features.join(" ")}`
         .toLowerCase()
         .includes(query.trim().toLowerCase()),
   );

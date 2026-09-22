@@ -41,6 +41,13 @@ export default async function Service({
           <TextLink href="/pricing">View pricing</TextLink>
         </div>
       </PageHero>
+      {s.goals.includes("marketing") && (
+        <div className="container marketing-back">
+          <TextLink href="/solutions/marketing-growth">
+            Explore Marketing & Customer Growth
+          </TextLink>
+        </div>
+      )}
       <section className="container service-detail">
         <div>
           <Eyebrow>What we can help with</Eyebrow>
@@ -106,6 +113,11 @@ export default async function Service({
               (other) =>
                 other.slug !== s.slug &&
                 other.goals.some((goal) => s.goals.includes(goal)),
+            )
+            .sort(
+              (a, b) =>
+                b.goals.filter((goal) => s.goals.includes(goal)).length -
+                a.goals.filter((goal) => s.goals.includes(goal)).length,
             )
             .slice(0, 3)
             .map((other) => (

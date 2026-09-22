@@ -27,8 +27,14 @@ import {
   BriefcaseBusiness,
   Sprout,
   Wrench,
+  Gift,
+  MessageSquareText,
+  PenLine,
 } from "lucide-react";
 const icons = {
+  gift: Gift,
+  feedback: MessageSquareText,
+  pen: PenLine,
   cart: ShoppingCart,
   calendar: CalendarDays,
   wallet: Wallet,

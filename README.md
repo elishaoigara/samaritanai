@@ -75,6 +75,10 @@ Production build and TypeScript validation are the main build gates. Browser che
 
 ### Expanded business solutions
 
-The service catalogue in `lib/content.ts` now covers 14 solution areas, with business-goal tags for the searchable `/solutions` explorer. The catalogue also generates detail pages, sitemap entries, related solutions and contact-form suggestions. New custom services use proposal-based pricing; sector products remain a separate planned roadmap.
+The service catalogue in `lib/content.ts` now covers 21 solution areas, with business-goal tags for the searchable `/solutions` explorer. The catalogue also generates detail pages, sitemap entries, related solutions and contact-form suggestions. New custom services use proposal-based pricing; sector products remain a separate planned roadmap.
 
 The homepage includes an interactive, explicitly illustrative workflow preview (sales, operations and customer service). Its figures and cards do not represent live customer activity. `app/business.css` contains the responsive visual refinement over the existing base theme, retaining cobalt and pearl surfaces.
+
+### Marketing & Customer Growth
+
+`/solutions/marketing-growth` groups seven services: email/WhatsApp campaigns, loyalty rewards, referrals, feedback/reviews, AI content workflows, campaign landing pages and marketing dashboards. Each has a detail page, a marketing goal tag, a sitemap entry and a contact suggestion. They are custom project offerings with proposal-based pricing; no campaign sending, publishing or customer tracking is enabled by adding these pages.
