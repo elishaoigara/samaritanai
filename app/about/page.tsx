@@ -1,5 +1,7 @@
+import { pageIdentity } from "@/lib/site";
 import { PageHero, Eyebrow, Button, CTA, Icon } from "@/components/ui";
 export const metadata = {
+  ...pageIdentity("/about"),
   title: "About us",
   description:
     "Meet Samaritan AI: a founder-led AI and software business based in Nairobi, building practical solutions for East Africa.",

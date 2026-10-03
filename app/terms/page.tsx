@@ -1,5 +1,9 @@
+import { pageIdentity } from "@/lib/site";
 import { PageHero } from "@/components/ui";
-export const metadata = { title: "Website terms" };
+export const metadata = {
+  ...pageIdentity("/terms"),
+  title: "Website terms",
+};
 export default function Terms() {
   return (
     <>

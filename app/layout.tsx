@@ -1,23 +1,19 @@
 import type { Metadata, Viewport } from "next";
+import { brandName, siteUrl } from "@/lib/site";
 import { Navigation, Footer } from "@/components/navigation";
 import "./globals.css";
 import "./theme.css";
 import "./business.css";
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000");
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Samaritan AI — Practical AI for East African businesses",
-    template: "%s | Samaritan AI",
+    default: `${brandName} — Practical technology for your business`,
+    template: `%s | ${brandName}`,
   },
   description:
     "AI, websites, online stores, POS, CRM, payments and business automation for Kenya and East Africa. Practical software built around your business.",
   icons: { icon: "/icon.svg", apple: "/icon.svg" },
-  openGraph: { type: "website", siteName: "Samaritan AI", locale: "en_KE" },
+  openGraph: { type: "website", siteName: brandName, locale: "en_KE" },
   robots: { index: true, follow: true },
 };
 export const viewport: Viewport = { themeColor: "#2452bd" };

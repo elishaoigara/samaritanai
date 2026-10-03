@@ -1,7 +1,9 @@
+import { pageIdentity } from "@/lib/site";
 import type { Metadata } from "next";
 import { PageHero, CTA, Button, TextLink } from "@/components/ui";
 import SolutionExplorer from "@/components/solution-explorer";
 export const metadata: Metadata = {
+  ...pageIdentity("/solutions"),
   title: "Business solutions",
   description:
     "Explore AI, e-commerce, POS, inventory, CRM, bookings, payments, portals, automation, marketing and customer growth solutions for your business.",

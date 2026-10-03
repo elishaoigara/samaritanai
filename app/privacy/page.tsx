@@ -1,5 +1,9 @@
+import { pageIdentity } from "@/lib/site";
 import { PageHero } from "@/components/ui";
-export const metadata = { title: "Privacy notice" };
+export const metadata = {
+  ...pageIdentity("/privacy"),
+  title: "Privacy notice",
+};
 export default function Privacy() {
   return (
     <>

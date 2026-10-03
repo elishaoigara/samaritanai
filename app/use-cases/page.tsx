@@ -1,5 +1,7 @@
+import { pageIdentity } from "@/lib/site";
 import { PageHero, CTA, Icon, TextLink } from "@/components/ui";
 export const metadata = {
+  ...pageIdentity("/use-cases"),
   title: "What’s possible",
   description:
     "Explore illustrative examples of AI assistance, invoice automation, retail operations, property enquiries and customer onboarding for East African businesses.",

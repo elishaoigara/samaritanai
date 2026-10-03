@@ -1,4 +1,4 @@
-# Samaritan AI
+# Samaritan AI & Software
 
 A complete responsive company website for Samaritan AI, built with Next.js App Router, React, TypeScript and Lucide icons. Prepared for Vercel.
 
@@ -38,12 +38,12 @@ The endpoint includes same-origin checking, bounded request size, a honeypot, co
 ## Pages
 
 - Home: positioning, workflow preview, services, local context, industries, process, starting prices and FAQs.
-- Solutions: six practice areas, each with its own detail page.
+- Solutions: 21 service areas, each with its own detail page.
 - Industries: retail, SACCOs, education, healthcare, hospitality, logistics, NGOs and enterprise/public sector.
 - Product roadmap: SACCO Core, School, Clinic, Stay, Fleet and Chama, explicitly marked planned.
 - Pricing: three assistant tiers, filterable service catalogue, specialist scope and cost notes.
 - About: mission, principles and the founder.
-- What’s possible: three illustrative use cases, not invented customer case studies.
+- What’s possible: six illustrative use cases, not invented customer case studies.
 - Demo: interactive, scripted retail, clinic and hospitality journeys; no AI API or live business actions.
 - Contact: interest-prefilled enquiry form and server-side email route.
 - Privacy, website terms, a custom 404, robots.txt and sitemap.xml.
@@ -82,3 +82,20 @@ The homepage includes an interactive, explicitly illustrative workflow preview (
 ### Marketing & Customer Growth
 
 `/solutions/marketing-growth` groups seven services: email/WhatsApp campaigns, loyalty rewards, referrals, feedback/reviews, AI content workflows, campaign landing pages and marketing dashboards. Each has a detail page, a marketing goal tag, a sitemap entry and a contact suggestion. They are custom project offerings with proposal-based pricing; no campaign sending, publishing or customer tracking is enabled by adding these pages.
+
+## Planned domain: samaritandigital.com
+
+The public brand remains **Samaritan AI & Software**. The header/footer descriptor and search titles retain that AI identity. `lib/site.ts` centralises the brand and URL used by page canonicals, Open Graph URLs, the sitemap and robots.txt.
+
+The domain is planned, not verified as purchased or connected. The code continues to use the existing Vercel production URL until `NEXT_PUBLIC_SITE_URL` is set. Do not set production to localhost or an unconnected domain. No redirect forces visitors onto an unpurchased domain, and no mailbox is assumed to exist.
+
+After purchase:
+
+1. In Vercel, open the **samaritanai project → Settings → Domains**. Add `samaritandigital.com` and `www.samaritandigital.com` to this project.
+2. Use the DNS records displayed for that project. Wait for valid domain configuration and HTTPS. Preserve existing mail records if present.
+3. Choose `samaritandigital.com` as the primary address and configure the `www` domain to redirect to it in Vercel.
+4. Set **Production** `NEXT_PUBLIC_SITE_URL=https://samaritandigital.com` and redeploy. For Preview, use the existing deployment configuration until ready; do not copy the localhost example into Production.
+5. Verify the home page and a solution detail page, their self-referencing canonical URLs, `/sitemap.xml` and `/robots.txt`. Submit the sitemap through a verified Search Console property when ready.
+6. Set up the chosen mailbox provider separately. Configure Resend's verified sender and the real recipient inbox for the enquiry form, then perform an authorised delivery test.
+
+If a different domain is selected, change the production URL setting and the planned-domain documentation. Relative navigation and contact API requests require no changes. Official setup guide: https://vercel.com/docs/domains/working-with-domains/add-a-domain

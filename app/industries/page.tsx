@@ -1,6 +1,8 @@
+import { pageIdentity } from "@/lib/site";
 import { PageHero, CTA, Icon, TextLink } from "@/components/ui";
 import { industries } from "@/lib/content";
 export const metadata = {
+  ...pageIdentity("/industries"),
   title: "Industries",
   description:
     "Practical AI and software use cases for retail, SACCOs, schools, healthcare, hospitality, logistics, property, professional services, agriculture, construction, NGOs and enterprise.",

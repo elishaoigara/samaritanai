@@ -1,3 +1,4 @@
+import { pageIdentity } from "@/lib/site";
 import Link from "next/link";
 import BusinessPreview from "@/components/business-preview";
 import {
@@ -8,6 +9,7 @@ import {
 } from "lucide-react";
 import { Button, CTA, Eyebrow, Icon, TextLink } from "@/components/ui";
 import { services, industries, faqs, marketingServices } from "@/lib/content";
+export const metadata = pageIdentity("/");
 export default function Home() {
   return (
     <>

@@ -1,6 +1,8 @@
+import { pageIdentity } from "@/lib/site";
 import { PageHero, CTA, Icon, CheckList, TextLink } from "@/components/ui";
 import { products } from "@/lib/content";
 export const metadata = {
+  ...pageIdentity("/products"),
   title: "Product roadmap",
   description:
     "Explore Samaritan AI’s planned sector platforms for SACCOs, schools, clinics, hospitality, fleets and chamas.",

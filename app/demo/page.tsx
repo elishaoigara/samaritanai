@@ -1,6 +1,8 @@
+import { pageIdentity } from "@/lib/site";
 import { PageHero } from "@/components/ui";
 import AssistantDemo from "@/components/assistant-demo";
 export const metadata = {
+  ...pageIdentity("/demo"),
   title: "Explore the assistant demo",
   description:
     "Try a scripted preview of English and Swahili customer journeys for retail, clinic administration and hospitality.",

@@ -12,11 +12,14 @@ const links = [
 ];
 export function Logo() {
   return (
-    <Link href="/" className="brand" aria-label="Samaritan AI home">
+    <Link href="/" className="brand" aria-label="Samaritan AI & Software home">
       <img src="/icon.svg" alt="" width="37" height="37" />
-      <span>
-        samaritan<span className="brand-ai">ai</span>
-        <span className="brand-dot">.</span>
+      <span className="brand-lockup">
+        <span>
+          samaritan<span className="brand-ai">ai</span>
+          <span className="brand-dot">.</span>
+        </span>
+        <span className="brand-descriptor">AI &amp; Software</span>
       </span>
     </Link>
   );
@@ -112,7 +115,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} Samaritan AI</span>
+        <span>© {new Date().getFullYear()} Samaritan AI &amp; Software</span>
         <span>Built with purpose. Built for people.</span>
         <div>
           <Link href="/privacy">Privacy</Link>

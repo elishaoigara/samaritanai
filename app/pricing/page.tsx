@@ -1,3 +1,4 @@
+import { pageIdentity } from "@/lib/site";
 import {
   PageHero,
   Button,
@@ -9,6 +10,7 @@ import {
 import PricingCatalog from "@/components/pricing-catalog";
 import { faqs } from "@/lib/content";
 export const metadata = {
+  ...pageIdentity("/pricing"),
   title: "Pricing",
   description:
     "Indicative KES pricing for AI assistants, workflow automation, websites, software, analytics and AI training.",

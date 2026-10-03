@@ -1,3 +1,4 @@
+import { pageIdentity } from "@/lib/site";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { services } from "@/lib/content";
@@ -20,7 +21,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const s = services.find((s) => s.slug === slug);
-  return { title: s?.name, description: s?.description };
+  return {
+    ...pageIdentity(`/solutions/${slug}`),
+    title: s?.name,
+    description: s?.description,
+  };
 }
 export default async function Service({
   params,

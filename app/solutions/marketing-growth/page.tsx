@@ -1,3 +1,4 @@
+import { pageIdentity } from "@/lib/site";
 import type { Metadata } from "next";
 import {
   PageHero,
@@ -10,6 +11,7 @@ import {
 } from "@/components/ui";
 import { marketingServices } from "@/lib/content";
 export const metadata: Metadata = {
+  ...pageIdentity("/solutions/marketing-growth"),
   title: "Marketing & Customer Growth",
   description:
     "Campaigns, loyalty, referrals, customer feedback, AI content, landing pages and marketing dashboards built around your business.",

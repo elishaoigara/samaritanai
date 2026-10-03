@@ -1186,3 +1186,22 @@ h3 {
     font-size: 25px;
   }
 }
+
+/* Keep the AI identity visible alongside the broader digital domain. */
+.brand-lockup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.brand-lockup > span:first-child {
+  line-height: 1;
+}
+.brand-lockup > .brand-descriptor {
+  font-family: var(--body);
+  font-size: 9px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--accent);
+}

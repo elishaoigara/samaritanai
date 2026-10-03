@@ -1,6 +1,8 @@
+import { pageIdentity } from "@/lib/site";
 import { PageHero, Eyebrow, Icon } from "@/components/ui";
 import ContactForm from "@/components/contact-form";
 export const metadata = {
+  ...pageIdentity("/contact"),
   title: "Let’s talk",
   description:
     "Tell Samaritan AI about your business, your idea or a workflow you want to improve. Start a practical conversation.",
