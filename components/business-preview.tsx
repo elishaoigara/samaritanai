@@ -1,4 +1,5 @@
 "use client";
+import { OrbitMark } from "@/components/orbit-mark";
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Check, ChevronRight, CircleDot } from "lucide-react";
@@ -102,7 +103,7 @@ export default function BusinessPreview() {
     <div className="business-preview">
       <div className="workspace-top">
         <span className="workspace-brand">
-          <span className="workspace-mark">s</span> Your business, connected
+          <span className="workspace-mark"><OrbitMark size={24} /></span> Your business, connected
         </span>
         <span className="example-badge">Illustrative workflow</span>
       </div>

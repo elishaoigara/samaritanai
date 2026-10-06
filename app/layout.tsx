@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   },
   description:
     "AI, websites, online stores, POS, CRM, payments and business automation for Kenya and East Africa. Practical software built around your business.",
-  icons: { icon: "/icon.svg", apple: "/icon.svg" },
+  icons: {
+    icon: { url: "/icon.svg?v=orbit-1", type: "image/svg+xml" },
+    apple: { url: "/apple-icon", type: "image/png", sizes: "180x180" },
+  },
   openGraph: { type: "website", siteName: brandName, locale: "en_KE" },
   robots: { index: true, follow: true },
 };

@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { OrbitMark } from "@/components/orbit-mark";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
@@ -13,12 +14,9 @@ const links = [
 export function Logo() {
   return (
     <Link href="/" className="brand" aria-label="Samaritan AI & Software home">
-      <img src="/icon.svg" alt="" width="37" height="37" />
+      <OrbitMark />
       <span className="brand-lockup">
-        <span>
-          samaritan<span className="brand-ai">ai</span>
-          <span className="brand-dot">.</span>
-        </span>
+        <span>Samaritan</span>
         <span className="brand-descriptor">AI &amp; Software</span>
       </span>
     </Link>
