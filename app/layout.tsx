@@ -4,6 +4,7 @@ import { Navigation, Footer } from "@/components/navigation";
 import "./globals.css";
 import "./theme.css";
 import "./business.css";
+import "./brand.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {

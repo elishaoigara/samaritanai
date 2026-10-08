@@ -7,7 +7,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 const links = [
   ["Solutions", "/solutions"],
   ["Industries", "/industries"],
-  ["Roadmap", "/products"],
+  ["Our approach", "/#our-process"],
   ["Pricing", "/pricing"],
   ["About us", "/about"],
 ];
@@ -49,6 +49,7 @@ export function Navigation() {
             <Link
               key={href}
               href={href}
+              onClick={() => setOpen(false)}
               aria-current={path.startsWith(href) ? "page" : undefined}
             >
               {name}
