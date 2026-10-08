@@ -16,26 +16,26 @@ export default function Home() {
       <section className="business-hero">
         <div className="container business-hero-grid">
           <div className="business-hero-copy">
-            <Eyebrow>AI + software. Built around your business.</Eyebrow>
+            <Eyebrow>Independent thinking. Practical technology.</Eyebrow>
             <h1>
-              Good business.
+              The right technology.
               <br />
-              <span>Better connected.</span>
+              <span>A stronger business.</span>
             </h1>
             <p>
-              From your first customer conversation to the work behind the
-              scenes. We build the websites, software and AI that help your
-              business move forward.
+              Websites, business software and AI solutions designed around
+              the way you work. From the first conversation to launch and
+              ongoing care, we help you take the next step with clarity.
             </p>
             <div className="button-row">
-              <Button href="/solutions">Find your solution</Button>
+              <Button href="/solutions">Explore our solutions</Button>
               <Link className="text-link" href="/contact">
                 Let’s talk <ArrowUpRight size={18} />
               </Link>
             </div>
             <div className="business-hero-note">
               <span className="location-dot" /> Nairobi, Kenya <span>·</span>{" "}
-              Built for businesses going places.
+              Serving businesses and institutions.
             </div>
           </div>
           <BusinessPreview />
@@ -79,11 +79,11 @@ export default function Home() {
       <section className="section container">
         <div className="section-heading">
           <div>
-            <Eyebrow>A toolkit for your next chapter</Eyebrow>
+            <Eyebrow>Our capabilities</Eyebrow>
             <h2>
-              More than one way
+              Connected thinking.
               <br />
-              to move forward.
+              Practical solutions.
             </h2>
           </div>
           <div>
@@ -316,7 +316,7 @@ export default function Home() {
             ))}
         </div>
       </section>
-      <section className="process-section container">
+      <section className="process-section container" id="our-process">
         <div>
           <Eyebrow>A clear path forward</Eyebrow>
           <h2>
@@ -325,9 +325,8 @@ export default function Home() {
             Build something that matters.
           </h2>
           <p>
-            No need to have it all figured out.
-            <br />
-            That’s what the first conversation is for.
+            A considered process, from understanding your needs to
+            delivering a solution your team can use.
           </p>
           <Button secondary>Talk through your idea</Button>
         </div>
