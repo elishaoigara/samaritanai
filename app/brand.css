@@ -231,3 +231,17 @@ p { text-wrap: pretty; }
   *,*::before,*::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
   .button:hover { transform: none; }
 }
+
+/* Starter website offer card: small, non-blocking, shown once */
+.starter-popup { position: fixed; right: 20px; bottom: 20px; z-index: 40; width: min(340px, calc(100vw - 24px)); background: #fff; color: var(--ink); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: 6px; padding: 22px 22px 18px; box-shadow: 0 12px 32px rgba(32,63,134,.18); animation: starter-popup-in .35s ease-out; }
+.starter-popup h2 { font-size: 22px; margin: 2px 0 8px; }
+.starter-popup p { font-size: 14px; line-height: 1.6; margin: 0; }
+.starter-popup .starter-popup-eyebrow { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.starter-popup-actions { display: flex; align-items: center; gap: 16px; margin-top: 16px; }
+.starter-popup-actions .button { padding: 10px 18px; font-size: 14px; }
+.starter-popup-dismiss { background: none; border: 0; padding: 8px 4px; font: inherit; font-size: 14px; color: var(--muted); cursor: pointer; text-decoration: underline; }
+.starter-popup-close { position: absolute; top: 6px; right: 6px; width: 40px; height: 40px; display: grid; place-items: center; background: none; border: 0; border-radius: 50%; color: var(--muted); cursor: pointer; }
+.starter-popup-close:hover { background: #edf1f7; }
+@keyframes starter-popup-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .starter-popup { animation: none; } }
+@media (max-width: 600px) { .starter-popup { right: 12px; left: 12px; bottom: 12px; width: auto; } }

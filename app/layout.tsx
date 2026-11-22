@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { brandName, siteUrl } from "@/lib/site";
 import { Navigation, Footer } from "@/components/navigation";
+import StarterPopup from "@/components/starter-popup";
 import "./globals.css";
 import "./theme.css";
 import "./business.css";
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Navigation />
         <main id="main-content">{children}</main>
         <Footer />
+        <StarterPopup />
       </body>
     </html>
   );
