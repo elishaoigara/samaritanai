@@ -4,7 +4,7 @@ export const metadata = {
   ...pageIdentity("/about"),
   title: "About us",
   description:
-    "Meet Samaritan AI: a founder-led AI and software business based in Nairobi, building practical solutions for East Africa.",
+    "Meet Samaritan AI: an AI and software team based in Nairobi, building practical solutions for East Africa.",
 };
 export default function About() {
   return (
@@ -47,8 +47,8 @@ export default function About() {
             about.
           </p>
           <p>
-            Samaritan AI is a founder-led AI and software business based in
-            Nairobi, built around a simple idea: advanced technology should be
+            Samaritan AI is an AI and software business based in Nairobi,
+            built around a simple idea: advanced technology should be
             useful, understandable and relevant to the businesses using it.
           </p>
           <p>
@@ -103,21 +103,21 @@ export default function About() {
       </section>
       <section className="container founder-section">
         <div className="founder-monogram" aria-hidden="true">
-          EO<span>FOUNDER / BUILDER</span>
+          SA<span>BUILD / SUPPORT</span>
         </div>
         <div>
-          <Eyebrow>Founder-led. Personally invested.</Eyebrow>
-          <h2>Elisha Oigara</h2>
-          <p className="founder-role">Founder · Software developer</p>
+          <Eyebrow>Hands-on. Personally invested.</Eyebrow>
+          <h2>How we work</h2>
+          <p className="founder-role">Software development · Practical AI</p>
           <p>
-            Elisha is building Samaritan AI from Nairobi, bringing hands-on
+            We’re building Samaritan AI from Nairobi, bringing hands-on
             software development and an interest in practical AI to the
             challenges businesses face every day.
           </p>
           <p>
-            As an early-stage, founder-led business, we work with a focused
-            delivery model: clear scopes, direct communication and specialist
-            support when a project needs it.
+            As an early-stage business, we work with a focused delivery model:
+            clear scopes, direct communication and specialist support when a
+            project needs it.
           </p>
           <Button href="/contact" secondary>
             Start a conversation

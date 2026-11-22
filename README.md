@@ -42,7 +42,7 @@ The endpoint includes same-origin checking, bounded request size, a honeypot, co
 - Industries: retail, SACCOs, education, healthcare, hospitality, logistics, NGOs and enterprise/public sector.
 - Product roadmap: SACCO Core, School, Clinic, Stay, Fleet and Chama, explicitly marked planned.
 - Pricing: three assistant tiers, filterable service catalogue, specialist scope and cost notes.
-- About: mission, principles and the founder.
+- About: mission, principles and how we work.
 - What’s possible: six illustrative use cases, not invented customer case studies.
 - Demo: interactive, scripted retail, clinic and hospitality journeys; no AI API or live business actions.
 - Contact: interest-prefilled enquiry form and server-side email route.
