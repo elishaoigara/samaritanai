@@ -74,8 +74,8 @@ export default function StarterPopup() {
       <p className="starter-popup-eyebrow">Starter website</p>
       <h2>No website yet?</h2>
       <p>
-        A fast, mobile-friendly one-page site for your business, from{" "}
-        <strong>KES 15,000</strong>.
+        A fast one-page site on your own domain, set up so customers can find
+        you on Google. From <strong>KES 15,000</strong>.
       </p>
       <div className="starter-popup-actions">
         <Link

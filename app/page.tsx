@@ -413,8 +413,8 @@ export default function Home() {
           <div>
             <h3>No website yet? Start with one page.</h3>
             <p>
-              Our starter website is KES 15,000: fast, mobile-first, with
-              WhatsApp and Google Maps built in.
+              Our starter website is KES 15,000: fast, mobile-first, on your
+              own domain and set up so customers can find you on Google.
             </p>
           </div>
           <TextLink href="/pricing#starter-website">See the starter website</TextLink>

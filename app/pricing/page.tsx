@@ -63,15 +63,17 @@ export default function Pricing() {
                 "WhatsApp chat button, call button and Google Maps location",
                 "Your products or services, opening hours and photos",
                 "Instagram feed or gallery section",
-                "Basic Google search setup",
-                "Live on a free web address, or your own .co.ke domain",
+                "We buy and set up your domain (.co.ke or .com) for you",
+                "Simple SEO once your domain is live: page titles, descriptions, sitemap and Google Search Console setup, so Google can find your business",
               ]}
             />
           </article>
         </div>
         <p className="fine-print">
-          Domain registration, if you want your own, is paid separately to the
-          registrar. One round of revisions is included; extra pages and
+          We handle the domain purchase and setup; the registration fee is
+          billed at cost and renews yearly. SEO setup helps Google find and
+          understand your site, but we can’t promise a particular ranking or
+          timeline. One round of revisions is included; extra pages and
           features are quoted separately. Delivery, payment milestones and
           applicable taxes are confirmed in your written proposal. No payment is
           taken on this website.
