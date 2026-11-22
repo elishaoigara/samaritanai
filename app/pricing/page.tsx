@@ -28,7 +28,56 @@ export default function Pricing() {
           cost.
         </p>
       </PageHero>
-      <section className="container">
+      <section className="container" id="starter-website">
+        <div className="pricing-section-label">
+          <Eyebrow>Starter website</Eyebrow>
+          <p>Fast on any phone · Built for small businesses</p>
+        </div>
+        <div className="plans plans-single">
+          <article className="plan plan-featured plan-wide">
+            <div>
+              <span className="pill">Launch offer · limited spots</span>
+              <h2>One-page business website</h2>
+              <p className="lead">
+                A clean, fast website for businesses that currently sell only
+                through Instagram or WhatsApp, so customers can find you on
+                Google.
+              </p>
+              <p className="price">
+                <span>KES</span> 15,000
+              </p>
+              <p className="monthly">
+                one-time build
+                <br />
+                <strong>Optional care plan: KES 1,500 / month</strong>
+              </p>
+              <Button
+                href={`/contact?interest=${encodeURIComponent("Starter website")}`}
+              >
+                Get a starter website
+              </Button>
+            </div>
+            <CheckList
+              items={[
+                "One mobile-first page, light enough for low-end phones and metered data",
+                "WhatsApp chat button, call button and Google Maps location",
+                "Your products or services, opening hours and photos",
+                "Instagram feed or gallery section",
+                "Basic Google search setup",
+                "Live on a free web address, or your own .co.ke domain",
+              ]}
+            />
+          </article>
+        </div>
+        <p className="fine-print">
+          Domain registration, if you want your own, is paid separately to the
+          registrar. One round of revisions is included; extra pages and
+          features are quoted separately. Delivery, payment milestones and
+          applicable taxes are confirmed in your written proposal. No payment is
+          taken on this website.
+        </p>
+      </section>
+      <section className="section container">
         <div className="pricing-section-label">
           <Eyebrow>WhatsApp AI assistant</Eyebrow>
           <p>English & Swahili · Human handover · Business knowledge</p>

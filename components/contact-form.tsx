@@ -117,6 +117,7 @@ export default function ContactForm({
         />
         <datalist id="interests">
           {[
+            "Starter website",
             ...services.map((service) => service.name),
             "Marketing & Customer Growth",
             "Product design partnership",
