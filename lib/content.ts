@@ -787,6 +787,13 @@ export const pricing = [
   },
   {
     category: "Web & software",
+    name: "Starter website (one page)",
+    starter: "15,000",
+    growth: "30,000 (up to 5 pages)",
+    enterprise: "See business website",
+  },
+  {
+    category: "Web & software",
     name: "Business website",
     starter: "45,000–65,000",
     growth: "90,000–150,000",

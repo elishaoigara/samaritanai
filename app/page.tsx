@@ -409,6 +409,16 @@ export default function Home() {
             </article>
           ))}
         </div>
+        <div className="small-banner">
+          <div>
+            <h3>No website yet? Start with one page.</h3>
+            <p>
+              Our starter website is KES 15,000: fast, mobile-first, with
+              WhatsApp and Google Maps built in.
+            </p>
+          </div>
+          <TextLink href="/pricing#starter-website">See the starter website</TextLink>
+        </div>
         <p className="fine-print">
           Indicative planning prices. Final scope, usage, third-party costs and
           applicable taxes are confirmed in your proposal.
