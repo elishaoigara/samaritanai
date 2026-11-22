@@ -64,17 +64,18 @@ export default function Pricing() {
                 "Your products or services, opening hours and photos",
                 "Instagram feed or gallery section",
                 "Basic Google search setup",
-                "Live on a free web address, or your own .co.ke domain",
+                "Live on your business domain — your own .co.ke or .com",
               ]}
             />
           </article>
         </div>
         <p className="fine-print">
-          Domain registration, if you want your own, is paid separately to the
-          registrar. One round of revisions is included; extra pages and
-          features are quoted separately. Delivery, payment milestones and
-          applicable taxes are confirmed in your written proposal. No payment is
-          taken on this website.
+          Every website goes live on your business domain (.co.ke or .com);
+          domain registration is paid separately to the registrar. One round of
+          revisions is included; extra pages and features are quoted
+          separately. Delivery, payment milestones and applicable taxes are
+          confirmed in your written proposal. No payment is taken on this
+          website.
         </p>
       </section>
       <section className="section container">
