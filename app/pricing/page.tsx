@@ -31,43 +31,56 @@ export default function Pricing() {
       <section className="container" id="starter-website">
         <div className="pricing-section-label">
           <Eyebrow>Starter website</Eyebrow>
-          <p>Fast on any phone · Built for small businesses</p>
+          <p>Launch offer · limited spots</p>
         </div>
-        <div className="plans plans-single">
-          <article className="plan plan-featured plan-wide">
-            <div>
-              <span className="pill">Launch offer · limited spots</span>
-              <h2>One-page business website</h2>
-              <p className="lead">
-                A clean, fast website for businesses that currently sell only
-                through Instagram or WhatsApp, so customers can find you on
-                Google.
-              </p>
+        <div className="plans plans-two">
+          {[
+            {
+              domain: ".co.ke",
+              pill: "Best for Kenyan customers",
+              text: "Your business online on a trusted Kenyan address, set up so local customers can find you on Google.",
+            },
+            {
+              domain: ".com",
+              pill: "Best if you sell beyond Kenya",
+              text: "Your business online on a global .com address, set up so customers anywhere can find you on Google.",
+            },
+          ].map((p, i) => (
+            <article
+              className={`plan ${i === 0 ? "plan-featured" : ""}`}
+              key={p.domain}
+            >
+              <span className="pill">{p.pill}</span>
+              <h2>Starter website · {p.domain}</h2>
+              <p>{p.text}</p>
               <p className="price">
                 <span>KES</span> 15,000
               </p>
               <p className="monthly">
                 one-time build
                 <br />
-                <strong>Optional care plan: KES 1,500 / month</strong>
+                <strong>+ {p.domain} domain fee, billed at cost</strong>
+                <br />
+                Optional care plan: KES 1,500 / month
               </p>
               <Button
-                href={`/contact?interest=${encodeURIComponent("Starter website")}`}
+                href={`/contact?interest=${encodeURIComponent("Starter website (" + p.domain + ")")}`}
+                secondary={i !== 0}
               >
-                Get a starter website
+                Get the {p.domain} starter
               </Button>
-            </div>
-            <CheckList
-              items={[
-                "One mobile-first page, light enough for low-end phones and metered data",
-                "WhatsApp chat button, call button and Google Maps location",
-                "Your products or services, opening hours and photos",
-                "Instagram feed or gallery section",
-                "We buy and set up your domain (.co.ke or .com) for you",
-                "Simple SEO once your domain is live: page titles, descriptions, sitemap and Google Search Console setup, so Google can find your business",
-              ]}
-            />
-          </article>
+              <CheckList
+                items={[
+                  "One mobile-first page, light enough for low-end phones and metered data",
+                  "WhatsApp chat button, call button and Google Maps location",
+                  "Your products or services, opening hours and photos",
+                  "Instagram feed or gallery section",
+                  `We buy and set up your ${p.domain} domain for you`,
+                  "Simple SEO once your domain is live: page titles, descriptions, sitemap and Google Search Console setup",
+                ]}
+              />
+            </article>
+          ))}
         </div>
         <p className="fine-print">
           We handle the domain purchase and setup; the registration fee is
